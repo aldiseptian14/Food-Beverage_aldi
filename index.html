@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Saya Food & Beverage</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fff;}
+    header {background:#d35400; color:white; padding:20px; text-align:center;}
+    nav {background:#e67e22; padding:10px; text-align:center;}
+    nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+    section {padding:40px; text-align:center;}
+    .menu {display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px;}
+    .item {border:1px solid #ddd; border-radius:10px; padding:15px; background:#fdf2e9;}
+    footer {background:#d35400; color:white; text-align:center; padding:15px; margin-top:30px;}
+    img {max-width:100%; border-radius:10px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Food & Beverage</h1>
+    <p>Nikmati cita rasa terbaik hanya untuk Anda!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+<section id="home" style="position: relative; text-align: center; color: white;">
+  <img src="cofee.jpg" 
+       alt="Food Banner" 
+       style="width: 100%; height: auto; filter: brightness(60%);">
+
+  <div style="position: absolute; top: 50%; left: 50%; 
+              transform: translate(-50%, -50%);">
+    <h2>Selamat Datang di Delicio!</h2>
+    <p>Rasakan kelezatan makanan & minuman yang dibuat dengan penuh cinta ❤️</p>
+  </div>
+</section>
+
+
+  <section id="menu">
+    <h2>Menu Kami</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="https://source.unsplash.com/200x150/?burger" alt="Burger">
+        <h3>Burger Special</h3>
+        <p>Rp 25.000</p>
+      </div>
+      <div class="item">
+        <img src="https://source.unsplash.com/200x150/?coffee" alt="Coffee">
+        <h3>Kopi Latte</h3>
+        <p>Rp 18.000</p>
+      </div>
+      <div class="item">
+        <img src="https://source.unsplash.com/200x150/?pizza" alt="Pizza">
+        <h3>Pizza Mini</h3>
+        <p>Rp 35.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Delicio adalah brand F&B yang menghadirkan makanan dan minuman berkualitas dengan harga bersahabat. 
+    Kami percaya, setiap hidangan adalah momen kebahagiaan.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak & Pemesanan</h2>
+    <p>📍 Alamat:</p>
+    <p>📞 WhatsApp: <a href=""></a></p>
+    <p>🛵 Pesan via: <a href="#">GrabFood</a> | <a href="#">GoFood</a> | <a href="#">ShopeeFood</a></p>
+  </section>
+
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
