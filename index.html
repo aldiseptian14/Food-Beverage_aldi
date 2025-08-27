@@ -14,6 +14,23 @@
     .item {border:1px solid #ddd; border-radius:10px; padding:15px; background:#fdf2e9;}
     footer {background:#d35400; color:white; text-align:center; padding:15px; margin-top:30px;}
     img {max-width:100%; border-radius:10px;}
+
+    /* === Tambahan Responsif === */
+    @media (max-width: 768px) {
+      header h1 {font-size: 24px;}
+      nav a {display:block; margin:10px 0;}
+      section {padding:20px;}
+      .menu {grid-template-columns: 1fr;} /* menu jadi 1 kolom di hp */
+      #home h2 {font-size: 20px;}
+      #home p {font-size: 14px;}
+    }
+
+    @media (max-width: 480px) {
+      header h1 {font-size: 20px;}
+      nav a {font-size: 14px;}
+      .item h3 {font-size: 16px;}
+      .item p {font-size: 14px;}
+    }
   </style>
 </head>
 <body>
@@ -29,18 +46,17 @@
     <a href="#contact">Kontak</a>
   </nav>
 
-<section id="home" style="position: relative; text-align: center; color: white;">
-  <img src="cofee.jpg" 
-       alt="Food Banner" 
-       style="width: 100%; height: auto; filter: brightness(60%);">
+  <section id="home" style="position: relative; text-align: center; color: white;">
+    <img src="cofee.jpg" 
+         alt="Food Banner" 
+         style="width: 100%; height: auto; filter: brightness(60%);">
 
-  <div style="position: absolute; top: 50%; left: 50%; 
-              transform: translate(-50%, -50%);">
-    <h2>Selamat Datang </h2>
-    <p>Rasakan kelezatan makanan & minuman yang dibuat dengan penuh cinta ❤️</p>
-  </div>
-</section>
-
+    <div style="position: absolute; top: 50%; left: 50%; 
+                transform: translate(-50%, -50%);">
+      <h2>Selamat Datang </h2>
+      <p>Rasakan kelezatan makanan & minuman yang dibuat dengan penuh cinta ❤️</p>
+    </div>
+  </section>
 
   <section id="menu">
     <h2>Menu Kami</h2>
@@ -65,20 +81,23 @@
 
   <section id="about">
     <h2>Tentang Kami</h2>
-    <p>Delicio adalah brand F&B yang menghadirkan makanan dan minuman berkualitas dengan harga bersahabat. 
+    <p>Kami menghadirkan makanan dan minuman berkualitas dengan harga bersahabat. 
     Kami percaya, setiap hidangan adalah momen kebahagiaan.</p>
   </section>
 
   <section id="contact">
     <h2>Kontak & Pemesanan</h2>
-    <p>📍 Alamat:</p>
-    <p>📞 WhatsApp: <a href=""></a></p>
-    <p>🛵 Pesan via: <a href="#">GrabFood</a> | <a href="#">GoFood</a> | <a href="#">ShopeeFood</a></p>
+    <p>📍 Alamat: Jl. Raya Cafe No. 123</p>
+    <p>📞 WhatsApp: <a href="#" target="_blank"></a></p>
+    <p>🛵 Pesan via: 
+      <a href="#">GrabFood</a> | 
+      <a href="#">GoFood</a> | 
+      <a href="#">ShopeeFood</a>
+    </p>
   </section>
 
   <footer>
-    <p></p>
+    <p>© 2025 Cafe Saya - All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
